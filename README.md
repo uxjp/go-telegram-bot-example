@@ -12,7 +12,7 @@ The scope of this repo is local development, and for this purpose, I'm storing m
 `doppler.com`. It allows me to log in locally and have my secrets injected into my app while I execute the command to run it, like:
 
 ```bash
-doppler run -- go run bot.go
+doppler run -- go run main.go
 ```
 
 ## BotFather
@@ -27,3 +27,38 @@ Using Telegram start a chat with [BotFather](https://telegram.me/BotFather) and 
 It can get really annoying to choose a name valid name for your bot, so keep trying until:  
 
 ![Choose a Valid Telegram username for your bot](images/bot-father-new-bot-username.png)
+
+## Setup Environment Variable for Token
+
+In my case I use doppler as I mentionned. Here how the dashboard looks like:  
+
+![Doppler.com Dashboard](images/doppler-dashboard.png)
+
+## Setup Go dependencies
+
+Initialize a Go module in your project directory:  
+```bash
+go mod init telegram-bot
+```
+
+Install the package of our main dependency [go-telegram/bot](https://github.com/go-telegram/bot) by running:
+
+## What should you get
+
+After running with:   
+```bash
+doppler run -- go run main.go
+```
+
+<img src="images/go-telegram-bot-example-console.png" alt="Go Telegram Bot Example Console" width="400">
+
+In your Telegram you should observe an echo behavior while you chat with the bot.  
+
+<img src="images/bot-chat.jpeg" alt="Go Telegram Bot Chat" width="250">
+
+
+From here you can improve your behavior handling and evolve your bot.  
+
+### References
+
+For this repo I used the example from the https://github.com/go-telegram/bot README.

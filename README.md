@@ -42,6 +42,9 @@ go mod init telegram-bot
 ```
 
 Install the package of our main dependency [go-telegram/bot](https://github.com/go-telegram/bot) by running:
+```bash
+go get github.com/go-telegram/bot
+```
 
 ## What should you get
 

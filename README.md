@@ -14,3 +14,16 @@ The scope of this repo is local development, and for this purpose, I'm storing m
 ```bash
 doppler run -- go run bot.go
 ```
+
+## BotFather
+
+Using Telegram start a chat with [BotFather](https://telegram.me/BotFather) and demand a new bot with:
+```
+/newbot
+```
+
+![Name your Telegram Bot](images/bot-father-newbot.png)
+
+It can get really annoying to choose a name valid name for your bot, so keep trying until:  
+
+![Choose a Valid Telegram username for your bot](images/bot-father-new-bot-username.png)
